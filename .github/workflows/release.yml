@@ -15,4 +15,4 @@ jobs:
       - name: Get dependencies
         run: go get
       - name: Go release
-        uses: goreleaser/goreleaser-action@v1
+        uses: goreleaser/goreleaser-action@v2
