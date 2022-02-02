@@ -1,0 +1,16 @@
+before:
+  hooks:
+    - go mod tidy
+builds:
+  - binary: agora-token-service
+    id: agora-token-service
+    main: ./main.go
+    goos:
+      - windows
+      - darwin
+      - linux
+      - freebsd
+    goarch:
+      - amd64
+      - 386
+      - arm
